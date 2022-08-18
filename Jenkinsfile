@@ -6,12 +6,13 @@ agent any
   
   parameters{
   string(name:"Environment",description:"select env")
+  choice(name:"Branch",choices:["master","release","deploy"])
   }
 stages{
 stage("Intro"){
 steps{
 
-  echo "Welcome ${params.Environment}"
+  echo "Welcome ${params.Branch}"
 }
 }
 
