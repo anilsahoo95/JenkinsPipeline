@@ -1,10 +1,13 @@
 pipeline{
 agent any
+  environment{
+   name = "anil" 
+  }
 stages{
 stage("Intro"){
 steps{
 
-  echo "${env.BRANCH_NAME}"
+  echo "Welcome ${env.name}"
 }
 }
 
