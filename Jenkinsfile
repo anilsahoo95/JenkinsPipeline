@@ -9,7 +9,7 @@ stages{
 stage("Intro"){
 steps{
   
-  echo "${CLOUDSCAN_ENV}"
+  echo "${env.CLOUDSCAN_ENV}"
  
 }
 }
