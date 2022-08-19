@@ -8,8 +8,9 @@ agent any
 stages{
 stage("Intro"){
 steps{
-  
+  sh"""
   echo "${env.CLOUDSCAN_ENV}"
+  """
  
 }
 }
