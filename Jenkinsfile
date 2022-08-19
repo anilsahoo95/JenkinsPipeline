@@ -10,9 +10,9 @@ stages{
 stage("Intro"){
 steps{
   script{
-  export name= sunil
+  export name= "sunil"
   echo ${name}
-  export CLOUDSCAN_ENV=prod
+  export CLOUDSCAN_ENV="prod"
   echo ${CLOUDSCAN_ENV}
   }
 }
