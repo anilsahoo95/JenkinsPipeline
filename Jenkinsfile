@@ -4,15 +4,18 @@ agent any
    name = "anil" 
   }
   
-  parameters{
-  string(name:"Environment",description:"select env")
-  choice(name:"Branch",choices:["master","release","deploy"])
-  }
+ 
 stages{
 stage("Intro"){
 steps{
-
-  echo "Welcome ${params.Branch}"
+  sh"""
+  echo $HOME
+  export name= sunil
+  echo ${name}
+  export CLOUDSCAN_ENV=prod
+  echo ${CLOUDSCAN_ENV}
+  
+  """
 }
 }
 
