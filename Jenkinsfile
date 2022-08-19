@@ -1,7 +1,7 @@
 pipeline{
 agent any
   environment{
-   CLOUDSCAN_ENV=""
+   CLOUDSCAN_ENV="hello"
   }
   
  
