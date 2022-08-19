@@ -9,7 +9,6 @@ stages{
 stage("Intro"){
 steps{
   sh"""
-  echo $HOME
   export name= sunil
   echo ${name}
   export CLOUDSCAN_ENV=prod
