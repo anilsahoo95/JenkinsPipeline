@@ -9,7 +9,8 @@ stages{
 stage("Intro"){
 steps{
   sh"""
-  echo "\$CLOUDSCAN_ENV"
+  myVar=some
+  echo "\$myVar"
   """
  
 }
