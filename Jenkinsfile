@@ -9,10 +9,10 @@ agent any
 stages{
 stage("Intro"){
 steps{
-  script{
+  sh"""
   echo ${name}
   echo ${CLOUDSCAN_ENV}
-  }
+  """
 }
 }
 
