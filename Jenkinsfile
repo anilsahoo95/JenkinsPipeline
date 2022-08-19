@@ -9,7 +9,7 @@ stages{
 stage("Intro"){
 steps{
   sh"""
-  echo ${CLOUDSCAN_ENV}
+  echo ${env.CLOUDSCAN_ENV}
   """
 }
 }
