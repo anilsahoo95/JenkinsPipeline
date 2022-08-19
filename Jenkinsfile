@@ -2,6 +2,7 @@ pipeline{
 agent any
   environment{
    name = "anil" 
+   CLOUDSCAN_ENV=""
   }
   
  
