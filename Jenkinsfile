@@ -1,19 +1,12 @@
 pipeline{
 agent any
-  environment{
-   CLOUDSCAN_ENV= "hello"
-  }
+  
   
  
 stages{
 stage("Intro"){
 steps{
-  script{
-    queen="1"
-  }
-  sh"""
-  echo "queen"
-  """
+  git url:'https://github.com/anilsahoo95/learnmaven',branch:'main'
  
 }
 }
